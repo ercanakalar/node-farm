@@ -4,14 +4,32 @@
   "description": "Learning node.js",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist",
+    "dev": "webpack"
   },
   "author": "Ercan Akalar",
   "license": "ISC",
   "dependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "parcel": "^2.0.0-beta.1",
+    "parcel-bundler": "^1.3.1",
+    "sass": "^1.54.8",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^4.10.1",
     "slugify": "~1.3.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.21.1",
+    "fractional": "^1.0.0",
+    "fracty": "^1.0.9",
+    "regenerator-runtime": "^0.13.9"
   }
 }
